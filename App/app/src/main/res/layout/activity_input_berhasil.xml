@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color1"
+    android:orientation="vertical"
+    tools:context=".InputBerhasil">
+
+    <ImageView
+        android:layout_width="278dp"
+        android:layout_height="313dp"
+        android:layout_gravity="center"
+        android:src="@drawable/logohome" />
+
+    <TextView
+        android:layout_width="164dp"
+        android:layout_height="wrap_content"
+        android:text="Input Berhasil"
+        android:textColor="@color/white"
+        android:fontFamily="sans-serif-black"
+        android:textSize="24dp"
+        android:layout_gravity="center"
+        android:layout_marginBottom="50dp"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/selesai"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="20dp"
+            android:layout_marginBottom="20dp"
+            android:backgroundTint="@color/white"
+            android:text="FINISH"
+            android:textColor="@color/black" />
+
+        <com.google.android.material.button.MaterialButton
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/inputAgain"
+            android:layout_below="@+id/selesai"
+            android:text="INPUT"
+            android:backgroundTint="@color/white"
+            android:layout_centerHorizontal="true"
+            android:layout_margin="20dp"
+            android:textColor="@color/black"
+            />
+
+    </RelativeLayout>
+
+</LinearLayout>
